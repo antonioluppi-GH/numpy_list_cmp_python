@@ -26,6 +26,9 @@ if __name__ == '__main__':
     # para aplicar en este caso.
     list_numeros_str = ['5', '2', '3', '', '7', 'NaN']
 
+    lista_numeros_int = [int(i) if i.isdigit() else 0 for i in list_numeros_str]
+
+    print(lista_numeros_int)
 
     # ¿Ya terminaron el ejercicio? ¿Por qué no prueban
     # hacer negativo alguno de los números de la lista?

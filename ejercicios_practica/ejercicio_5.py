@@ -30,6 +30,10 @@ if __name__ == '__main__':
 
     # personal_1_10 = [.....]
 
+    personal_1_10 = [i for i in accesos if i <= 10]
+    print(personal_1_10)
+
+
     # 2)
     # Generar una lista por comprensión de la listas "accesos"
     # cuyo ID de personal esté dentro de los ID válidos para ingresar
@@ -42,4 +46,8 @@ if __name__ == '__main__':
 
     # personal_valido = [.....]
 
+    personal_valido = [i for i in accesos if i in id_validos]
+    print(personal_valido)
+
+    
     print("terminamos")
